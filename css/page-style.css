@@ -1,0 +1,381 @@
+/* Start Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-color:#051622;
+    --color-1:#DEB992;
+    --color-2:#ffffff;
+    --border-redius-pr:50%;
+    --border-redius-px:50px;
+    --opacity-1:1;
+    --opacity-7:.7;
+    --box-shadow: 0 3px 6px 0 rgba(199, 85, 237, 0.2), 0 -4px 10px 0 rgba(0, 200, 240, 0.26), 0 -4px 10px 0 rgba(0, 200, 240, 0.26);
+    --background-hr-border:#95816c;
+    --background-header:#01223a;
+    --background-a-hover:#146c9578;
+    --color-i:#1ba098 ;
+    --background-color-2:#212f3c ;
+    --color-span:#146c95;
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: var(--color-1);
+}
+ul {
+    list-style-type: none;
+}
+input {
+    outline: none;
+    color: var(--color-1);
+}
+body {
+    background: var(--background-color);
+    color: var(--color-1);
+    font-family: 'Tilt Neon', cursive;
+}
+i {
+    color: var(--color-i);
+}
+/* Start scorll */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--background-color);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--background-color-2);
+    border-radius: 20px;
+}
+/* End scorll */
+
+/* End Global Rules */
+
+/* Start header  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    padding: 10px 15px;
+    background-color: var(--background-header);
+    border-bottom: 1px solid var(--background-hr-border);
+}
+/* Start left */
+header .left i{
+font-size: 25px;
+
+}
+header .left i:first-of-type {
+    padding: 6px 8px;
+    opacity: 1;
+    border-radius: var(--border-redius-pr);
+    box-shadow: var(--background-header);
+    transition: opacity box-shadow .3s;
+    cursor: pointer;
+}
+header .left i:first-of-type:hover {
+    opacity:.7;
+    box-shadow: var(--box-shadow);
+}
+header .left i:last-of-type  {
+    color: var(--color-2);
+
+}
+header .left span  {
+    color: var(--color-span);
+    font-size: 20px;
+}
+header .left span span {
+    color: var(--color-2);
+}
+/* Start left */
+/* Start center */
+header .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+header .center form input {
+    width:500px;
+    height: 40px;
+    padding: 12px;
+   border-radius: var(--border-redius-px) 0 0 var(--border-redius-px);
+    background-color:transparent;
+    border-color: var(--background-color-2);
+    color: var(--color-1);
+    border-right: none;
+}
+header .center form button {
+    padding: 7px 21px 10px 19px ;
+    font-size: 19px;
+    height: 40px;
+    border-left: none;
+    margin-left: -5px;
+    cursor: pointer;
+    background-color:var(--color-i);
+    box-shadow: var(--background-color-2);
+    opacity: var(--opacity-1);
+    border-color: var(--background-color-2);
+    border-radius: 0 var(--border-redius-px) var(--border-redius-px) 0;
+    transition: background-color opacity box-shadow .3s linear;
+    
+}
+header .center form button i {
+    color: var(--color-2);
+}
+header .center form button:hover {
+    opacity: var(--opacity-7);
+    box-shadow: var(--box-shadow);
+}
+header .center .micr {
+    margin-left: 15px;
+    font-size: 22px;
+    padding: 8px 10px;
+    border-radius: var(--border-redius-pr);
+    box-shadow:  var(--background-color-2);
+    opacity: var(--opacity-1);
+    transition: opacity bix-shadow .3s linear;
+    cursor: pointer;
+}
+header .center .micr:hover {
+    opacity: var(--opacity-7);
+    box-shadow: var(--box-shadow);
+
+}
+/* End center */
+/* Start right */
+
+header .right a {
+    padding: 8px 0px 8px 13px;
+    border-radius: var(--border-redius-px);
+    box-shadow:  var(--background-color-2);
+    transition: box-shadow .3s linear;
+}
+header .right a:hover{
+    box-shadow: var(--box-shadow);
+
+}
+header .right i {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 22px;
+    box-shadow:  var(--background-color-2);
+    opacity: var(--opacity-1);
+    transition: opacity box-shadow .3s linear;
+    cursor: pointer;
+}
+header .right i:hover {
+    opacity: var(--opacity-7);
+    
+}
+
+/* End right */
+/* Start section video */
+section {
+    padding: 12px;
+    margin: 10px 0 0 0;
+}
+section .watch {
+    display: flex;
+    gap:20px;
+}
+section .watch .video {
+    width:70%;
+}
+section .video .video-watch {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+section .video .video-watch .video-live iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+}
+section .title-video h1  {
+    font-size: 45px;
+    text-align: right;
+    padding: 20px 10px;
+    text-shadow: .1em .1em .1em hsl(200 10% 20%);
+}
+.title-video .channle {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.title-video .channle .image-channel img {
+    overflow: hidden;
+    border-radius: var(--border-redius-px);
+}
+.title-video .channle .title-channel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.title-video .channle .title-channel .title h6 {
+    font-size: 20px;
+}
+.title-video .channle .title-channel .title p {
+    font-size: 12px;
+    line-height: 1.4;
+}
+.title-video .channle .title-channel .button-sub button {
+    padding: 10px 15px;
+    border: none;
+    position: relative;
+    transform: scale(1);
+    border-radius: var(--border-redius-px);
+    background-color:var(--background-color-2);
+    color: var(--color-1);
+    cursor: pointer;
+    opacity: var(--opacity-7);
+    box-shadow: var(--box-shadow);
+    transition: opacity transform .3s linear;
+}
+.title-video .channle .title-channel .button-sub button:hover {
+    opacity: var(--opacity-1);
+    z-index: 2;
+    transform: scale(1.2);
+}
+.title-video .like-channel {
+    display: flex;
+    gap: 20px;
+    margin: 15px 0;
+}
+.title-video .like-channel .lchannel {
+    display: inline-block;
+    position: relative;
+    transform: scale(1);
+    background-color: var(--background-color-2);
+    padding: 10px 15px;
+    border-radius: var(--border-redius-px);
+    box-shadow: var(--box-shadow);
+    opacity: var(--opacity-7);
+    cursor: pointer;
+    transition: opacity transform .3s linear;
+}
+.title-video .like-channel .lchannel i {
+    position: relative;
+    transform: scale(1);
+    opacity: var(--opacity-7);
+    transition: transform opacity .3s linear;
+}
+.title-video .like-channel .lchannel i:hover {
+    z-index: 2;
+    transform: scale(1.2);
+    opacity: var(--opacity-1);
+}
+.title-video .like-channel .lchannel:hover  {
+    opacity: var(--opacity-1);
+    z-index: 2;
+    transform: scale(1.1);
+}
+.com-channel .com span {
+    margin: 20px 20px 20px 0;
+    font-size: 14px;
+    text-shadow: .1em .1em 0 hsl(200 50% 30%);
+}
+.com-channel .add-com {
+    display: flex;
+    gap: 15px;
+    height: 60px;
+}
+.com-channel .add-com .user {
+align-self: center;
+font-size: 25px;
+}
+.com-channel .add-com .add {
+    width: 100%;
+    align-self: flex-start;
+}
+.com-channel .add-com .add input {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-1) ;
+}
+
+/* Start comment  */
+.comment {
+    padding: 10px 0;
+}
+.comment .com {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    
+}
+.comment .com i {
+    font-size: 25px;
+    
+}
+.comment .like-channel {
+    margin-left: 40px;
+    cursor: pointer;
+    position: relative;
+    transform: scale(1);
+    transition: transform .3s linear;
+}
+.comment .like-channel i:hover {
+    z-index: 2;
+    transform: scale(1.2);
+}
+/* Start more */
+.more-video {
+    width: 30%;
+}
+.more-video .boxs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+}
+.more-video .boxs .box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 95px;
+    cursor: pointer;
+    position: relative;
+    transform: scale(1);
+    transition: box-shadow transform .3s linear;
+}
+.title-image h5 {
+    font-size: 11px;
+}
+.title-image p , 
+span {
+font-size: 10px;
+}
+.more-video .boxs .box:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+    z-index: 2;
+}
+.more-video .boxs .box .image-more {
+    width: 100%;
+    height: 100%;
+}
+.more-video .boxs .box .image-more  img {
+    border-radius: 15px;
+    align-self: center;
+    height: 100%;
+}
+/* End section video */

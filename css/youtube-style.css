@@ -1,0 +1,324 @@
+/* Start Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-color:#051622;
+    --color-1:#DEB992;
+    --color-2:#ffffff;
+    --border-redius-pr:50%;
+    --border-redius-px:50px;
+    --opacity-1:1;
+    --opacity-7:.7;
+    --box-shadow: 0 3px 6px 0 rgba(199, 85, 237, 0.2), 0 -4px 10px 0 rgba(0, 200, 240, 0.26), 0 -4px 10px 0 rgba(0, 200, 240, 0.26);
+    --background-hr-border:#95816c;
+    --background-header:#01223a;
+    --background-a-hover:#146c9578;
+    --color-i:#1ba098 ;
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: var(--color-1);
+}
+ul {
+    list-style-type: none;
+}
+input {
+    outline: none;
+    
+}
+body {
+    background-color: var(--background-color);
+    color: var(--color-1);
+    font-family: 'Tilt Neon', cursive;
+}
+i {
+    color: var(--color-i);
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--background-color);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #212f3c;
+    border-radius: 20px;
+}
+/* End Global Rules */
+
+/* Start header  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    padding: 10px 15px;
+    background-color: var(--background-header);
+    border-bottom: 1px solid var(--background-hr-border);
+}
+/* Start left */
+header .left i{
+font-size: 25px;
+
+}
+header .left i:first-of-type {
+    padding: 6px 8px;
+    opacity: 1;
+    border-radius: 50%;
+    transition: opacity box-shadow .3s linear;
+    cursor: pointer;
+}
+header .left i:first-of-type:hover {
+    opacity:.7;
+    box-shadow: var(--box-shadow);
+}
+header .left i:last-of-type  {
+    color: var(--color-2);
+
+}
+header .left span  {
+    color: #146c95;
+    font-size: 20px;
+}
+header .left span span {
+    color: var(--color-2);
+}
+/* Start left */
+/* Start center */
+header .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+header .center form input {
+    width:500px;
+    height: 40px;
+    padding: 12px;
+   border-radius:var(--border-redius-px) 0 0 var(--border-redius-px);
+    background-color:transparent;
+    border-color: #212f3c;
+    color: var(--color-1);
+    border-right: none;
+}
+header .center form button {
+    padding: 7px 21px 10px 19px ;
+    font-size: 19px;
+    height: 40px;
+    border-left: none;
+    margin-left: -5px;
+    background-color:var(--color-i);
+    cursor: pointer;
+    opacity: var(--opacity-1);
+    border-color: #212f3c;
+    border-radius: 0 50px 50px 0;
+    transition: background-color opacity box-shadow .3s linear;
+    
+}
+header .center form button i {
+    color: var(--color-2);
+}
+header .center form button:hover {
+    opacity:var(--opacity-7);
+    box-shadow:  var(--box-shadow);
+}
+header .center .micr {
+    margin-left: 15px;
+    font-size: 22px;
+    padding: 8px 10px;
+    border-radius: 50%;
+    opacity: var(--opacity-1);
+    transition: opacity box-shadow .3s linear;
+    cursor: pointer;
+}
+header .center .micr:hover {
+    opacity: var(--opacity-7);
+    box-shadow:  var(--box-shadow);
+
+}
+/* End center */
+/* Start right */
+
+header .right a {
+    padding: 8px 0px 8px 13px;
+    border-radius: var(--border-redius-px);
+    transition: box-shadow .3s linear;
+}
+header .right a:hover{
+    box-shadow: var(--box-shadow);
+
+}
+header .right i {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 22px;
+    opacity: 1;
+    transition: opacity box-shadow .3s linear;
+    cursor: pointer;
+}
+header .right i:hover {
+    opacity: .7;
+    
+}
+
+/* End right */
+/* Start con-youtube  */
+section {
+    height: calc(100% - 70px);
+    background-color: var(--background-header);
+}
+section .con-you {
+    display: flex;
+    gap: 10px;
+}
+section .con-you .list-con {
+    width: 20%;
+    height: calc(100vh - 86px);
+    padding-right: 12px;
+    overflow-y:scroll;
+    margin-top: 15px;
+    position: sticky;
+    z-index: 1;
+}
+.con-you .list-con .list  {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 14px;
+}
+.list hr {
+    background-color: var(--background-hr-border);
+    height: 1px;
+    margin: 10px 0;
+}
+.con-you .list-con .list a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5px;
+    padding: 10px 14px;
+    background-color: var(--background-header);
+    border-radius: 10px;
+    transform: scale(1);
+    transition:background-color box-shadow opacity transform .5s linear;
+}
+.con-you .list-con .list a i {
+    font-size: 21px;
+}
+.con-you .list-con .list a span {
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    text-shadow: .1em .1em 0 hsl(200 50% 30%);
+}
+.con-you .list-con .list a:hover {
+    background-color: var(--background-a-hover);
+    box-shadow:  var(--box-shadow);
+    z-index: 2;
+    transform: scale(1.1);
+}
+.con-you .list-con .list h3 {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: var(--color-i);
+    text-shadow: .1em .1em 0 hsl(200 50% 30%);
+}
+.con-you .list-con .footer {
+    padding: 14px;
+}
+.con-you .list-con .footer a {
+    display: inline-block;
+    font-size: 12px;
+}
+/* Start con */
+section .con-you .con {
+    width: 80%;
+    padding: 10px 0;
+    position: sticky;
+    top: 30px;
+}
+.con .nav-con ul li  {
+    display:inline-block;
+    padding: 10px 10px ;
+    background-color: var(--background-a-hover);
+    cursor: pointer;
+    opacity: var(--opacity-7);
+    border-radius: 50px;
+    margin: 10px 2px 0 0;
+    position: relative;
+    transform: scale(1);
+    transition: opactiy box-shadow transform .3s linear;
+}
+.con .nav-con ul li:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    opacity: var(--opacity-1);
+    box-shadow:  var(--box-shadow);
+}
+.con-video {
+    margin-top: 10px;
+    padding: 20px 0;
+    position: fixed;
+    overflow-y:scroll ;
+    height: calc(100vh - 18%);
+}
+.con-video .boxs {
+    padding: 5px 10px 12px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px ;
+}
+.con-video .boxs .box {
+    width: calc(100% / 4 - 20px);
+    border-radius: 5px;
+    background-color: #051622;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transform: scale(1);
+    transition: box-shadow transform .3s linear;
+}
+.con-video .boxs .box:hover {
+    box-shadow:  var(--box-shadow);
+    transform: scale(1.1);
+    z-index: 2;
+}
+.box .con-title {
+    padding: 12px;
+}
+.con-title .title-video {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.con-title .title-video img {
+    border-radius: 50px;
+}
+.con-title .title-video .title h5 {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+}
+.con-title .des-video {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.con-title .des-video span {
+    font-size: 10px;
+}
+/* End con-youtube  */
